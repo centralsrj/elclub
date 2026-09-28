@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Distribuidora de Frutas y Verduras Central SRJ</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="theme-color" content="#1E4B35">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Central SRJ">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #1E4B35;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    IMPORTANTE: reemplaza la URL de abajo por la URL real de tu Web App
+    de Apps Script (la que termina en /exec). NO le agregues ?admin=1
+    aquí — esta liga es solo para clientes.
+  -->
+  <iframe
+    src="https://www.google.com/search?q=el+club+shop&oq=el+club&gs_lcrp=EgZjaHJvbWUqBggBECMYJzIGCAAQRRg5MgYIARAjGCcyCggCEC4YgAQYtAcyBwgDEC4YgAQyCggEEC4YgAQYtAcyBggFEEUYPTIGCAYQRRg9MgYIBxBFGDzSAQgxODY2ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CCYSrwEKEgoDdGJzEgtscmY6ITNzSUFFPQoRCgFxEgxlbCBjbHViIHNob3AKBwoDdWRtEgAQARoQcHYtL2cvMTF6eDZra3h2OCojCg0vZy8xMXp4NmtreHY4IhIKDGVsIGNsdWIgc2hvcBACGAMyRAoMZWwgY2x1YiBzaG9wSMjm4-jwvoCACFoaEAAQARACGAAYARgCIgxlbCBjbHViIHNob3CSAQ11bmlmb3JtX3N0b3JlGAogsr2hrAM"
+    title="Distribuidora de Frutas y Verduras Central SRJ"
+    allow="geolocation"
+  ></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
